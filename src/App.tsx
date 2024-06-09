@@ -3,7 +3,7 @@ function App() {
 
   return (
     <>
-      <h1>CENITEG SOLUTIONS</h1>
+      <div className="h-1 w-full text-center">CENITEG SOLUTIONS</div>
     </>
   )
 }
