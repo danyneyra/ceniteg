@@ -1,4 +1,4 @@
-# Ceniteg Web Application
+# Ceniteg Web
 
 ![Ceniteg Logo](https://beta.ceniteg.com/images/logo-dark.png)
 
