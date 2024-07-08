@@ -1,26 +1,24 @@
 import { BASE_URL } from "../assets/baseCondig"
-import styles from "./Header.module.css"
+import Navbar from "./Navbar"
 
 export default function Header() {
   return (
-    <>
-        <header className={styles["header"]}>
-            <div className={styles["logo"]}>
-                <img src={BASE_URL + "logo-ceniteg-black.png"} alt="" />
+        <header className="bg-ceniteg flex py-5 justify-between">
+            <div className="">
+                <img className="bg-white w-[130px] py-2 pl-4 pr-8 rounded-e-full" src={BASE_URL + "LOGO CENITEG_logo-vertical.png"} alt="" />
             </div>
-            <div className={styles["navbar-container"]}>
-                <nav className={styles["navbar"]}>
-                    <div>Servicios</div>
-                    <div>Proyectos</div>
-                    <div>Acerca</div>
+            <div className="flex flex-col">
+                <nav className="flex gap-4 py-6 pl-8 pr-12">
+                    <Navbar name="Inicio" url="/"></Navbar>
+                    <Navbar name="Nosotros" url="/"></Navbar>
+                    <Navbar name="Servicios" url="/"></Navbar>
+                    <Navbar name="Productos" url="/"></Navbar>
+                    <Navbar name="Proyectos" url="/"></Navbar>
+                    <Navbar name="Noticias" url="/"></Navbar>
                 </nav>
-            </div>
-            <div>
-                <div>
-                    <button>Contacto</button>
-                </div>
+                <div className="border-t-8 border-[#4b86ba] my-4"></div>
+                
             </div>
         </header>
-    </>
   )
 }
