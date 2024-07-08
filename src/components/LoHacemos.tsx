@@ -1,8 +1,9 @@
+import { BASE_URL } from "../assets/baseCondig";
 
 export default function LoHacemos() {
   return (
     <div className="flex justify-center p-4">
-        <div className="xl:max-w-[1080px] flex grid-cols-2">
+        <div className="xl:max-w-[1220px] flex grid-cols-2">
             <div className="w-full flex flex-col gap-2">
                 <h1 className="text-5xl text-left font-heading font-normal" >¿Qué somos y <br/> cómo lo hacemos?</h1>
                 <p className="text-xl text-justify text-align-last-justify p-2">
@@ -22,7 +23,7 @@ export default function LoHacemos() {
                 </p>
             </div>
             <div className="w-full">
-
+                <img src={BASE_URL + "somos.png"} alt="" />
             </div>
         </div>
     </div>
