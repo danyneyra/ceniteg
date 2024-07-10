@@ -4,10 +4,17 @@
 @tailwind components;
 @tailwind utilities;
 
+
+html {
+  scroll-behavior: smooth;
+}
+
 /* Añade el estilo personalizado para el body */
 body {
     @apply bg-ceniteg; /* Usa la clase de Tailwind para aplicar el color de fondo */
     @apply text-[#f4f4f4];
+    overflow-x: hidden;
+    
   }
 
   @layer utilities {
@@ -15,4 +22,15 @@ body {
       word-spacing: 0.5em;
     }
   }
-  
+
+  @layer utilities {
+    .transparent-bg {
+      @apply bg-[rgba(22,22,22,0.79)];
+    }
+    .header-shadow {
+      @apply shadow-[rgba(0,0,0,0.48)_5px_5px_5px_0px];
+    }
+    .backdrop-blur-3 {
+      @apply backdrop-blur-[3px];
+    }
+  }

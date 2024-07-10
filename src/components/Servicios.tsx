@@ -1,10 +1,20 @@
 import CardServicio from "./ux/CardServicio";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+import BlockSpace from "./ux/BlockSpace";
 
 export default function Servicios() {
+
+  useEffect(() => {
+    AOS.init({ duration: 1000 }); // Puedes ajustar la duración de la animación aquí
+  }, []);
+
   return (
     <div className="flex flex-col gap-4 p-4">
+        <BlockSpace></BlockSpace>
         <div className="flex justify-center py-6">
-            <h1 className="text-6xl text-left font-heading font-normal" >¡Nuestros principales servicios!</h1>
+            <h1 className="text-6xl text-left font-heading font-normal" data-aos="zoom-in-up">¡Nuestros principales servicios!</h1>
         </div>
         <div className="flex gap-10 justify-center">
           <CardServicio image="normas-iso.png" title="Casa certificadora de las normas ISO"></CardServicio>

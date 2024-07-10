@@ -1,16 +1,26 @@
 import { BASE_URL } from "../assets/baseCondig";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+import BlockSpace from "./ux/BlockSpace";
 
 export default function Welcome() {
+
+  useEffect(() => {
+    AOS.init({ duration: 1500 }); // Puedes ajustar la duración de la animación aquí
+  }, []);
+
   return (
     <div className="flex flex-col p-4">
+        <BlockSpace></BlockSpace>
         <div className="flex justify-center">
-        <h1 className="text-6xl font-heading text-center py-8" >¡Bienvenidos a <br/> Ceniteg Solutions!</h1>
+          <h1 className="text-6xl font-heading text-center py-8" data-aos="zoom-in-up">¡Bienvenidos a <br/> Ceniteg Solutions!</h1>
         </div>
         <div className="flex gap-4 justify-center">
-          <div>
+          <div data-aos="zoom-in">
             <img className="w-[200px]" src={BASE_URL + "ceniteg-logo-3d.png"} alt="Ceniteg Logo 3D" />
           </div>
-          <div className="w-[480px] text-xl">
+          <div className="w-[480px] text-xl" data-aos="zoom-in">
             <p className="text-justify text-align-last-justify">Somos una organización dedicada a
                 impulsar el desarrollo de proyectos que
                 generan valor a nuestros clientes del

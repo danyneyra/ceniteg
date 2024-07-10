@@ -19,6 +19,7 @@ export default {
     },
   },
   plugins: [
+    require('tailwindcss-animated'),
     function ({ addUtilities }) {
       addUtilities({
         '.text-justify': {
@@ -26,6 +27,9 @@ export default {
         },
         '.text-align-last-justify': {
           'text-align-last': 'justify',
+        },
+        '.scroll-smooth': {
+          'scroll-behavior': 'smooth',
         },
       });
     },
