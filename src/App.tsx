@@ -6,8 +6,16 @@ import Projects from "./views/Projects"
 import Services from "./views/Services"
 import NotFound from "./views/NotFound"
 import About from "./views/About"
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // Importa los estilos de AOS
+import { useEffect } from "react"
 
 function App() {
+
+  useEffect(() => {
+    AOS.init({
+    });
+  }, []);
 
   const browserRouter = createBrowserRouter([
     {path: BASE_URL, element: <Home />},

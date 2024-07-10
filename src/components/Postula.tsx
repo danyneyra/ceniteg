@@ -7,15 +7,15 @@ import BlockSpace from "./ux/BlockSpace";
 export default function Postula() {
 
   useEffect(() => {
-    AOS.init({ duration: 1000 }); // Puedes ajustar la duración de la animación aquí
+    AOS.refresh(); // Puedes ajustar la duración de la animación aquí
   }, []);
 
   return (
     <div className="flex justify-center p-8">
       <div className="xl:max-w-[1220px] flex-col items-center">
         <BlockSpace></BlockSpace>
-        <h1 className="text-6xl text-center text-[#4c86bb] font-heading font-normal" data-aos="zoom-in-up">¡Postula tu proyecto hoy!</h1>
-        <p className="text-3xl text-center font-heading font-normal" data-aos="zoom-in-up">Inspira con tu visión y transforma el mundo</p>
+        <h1 className="text-6xl text-center text-[#4c86bb] font-heading font-normal" data-aos="zoom-in-up" data-aos-duration="1500">¡Postula tu proyecto hoy!</h1>
+        <p className="text-3xl text-center font-heading font-normal" data-aos="zoom-in-up" data-aos-duration="1500">Inspira con tu visión y transforma el mundo</p>
         <div className="flex grid-cols-2 gap-8 p-4 w-full justify-between">
             <div className="w-full">
               <InputLabel label="Nombre completo de postulante"></InputLabel>

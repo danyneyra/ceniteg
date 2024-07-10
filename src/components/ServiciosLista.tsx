@@ -1,26 +1,34 @@
 import { BASE_URL } from "../assets/baseCondig";
 import ListServicio from "./ux/ListServicio";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 export default function ServiciosLista() {
+
+    useEffect(() => {
+        AOS.refresh(); // Puedes ajustar la duración de la animación aquí
+      }, []);
+
   return (
     <div id="servicios" className="flex justify-center p-8">
         <div className="xl:max-w-[1080px] flex-col">
-            <h1 className="text-6xl text-left font-heading font-normal py-4">Servicios</h1>
+            <h1 className="text-6xl text-left font-heading font-normal py-4" data-aos="fade-up-right" data-aos-duration="1500">Servicios</h1>
             <div className="flex grid-cols-2 p-8 justify-center">
-                <div className="w-full flex flex-col gap-4 p-4">
+                <div className="w-full flex flex-col gap-4 p-4" data-aos="fade-right"  data-aos-duration="1500">
                     <ListServicio title="Ingeniería de polvorines y gestión de explosivos"></ListServicio>
                     <ListServicio title="Consultoría y desarrollo de proyectos mineros y ambientales"></ListServicio>
                     <ListServicio title="Estudios ambientales"></ListServicio>
                     <ListServicio title="Asesoría en trámites con entidades estatales"></ListServicio>
                 </div>
-                <div className="w-full flex flex-col gap-4 p-4">
+                <div className="w-full flex flex-col gap-4 p-4" data-aos="fade-left"  data-aos-duration="1500">
                     <ListServicio title="Capacitación y entrenamiento"></ListServicio>
                     <ListServicio title="Cooperación para el desarrollo"></ListServicio>
                     <ListServicio title="Asesoría empresarial"></ListServicio>
                     <ListServicio title="Casa certificadora de las normas ISO"></ListServicio>
                 </div>
             </div>
-            <div className="bg-white rounded-3xl flex">
+            <div className="bg-white rounded-3xl flex" data-aos="zoom-in-up" data-aos-duration="1500">
                 <div className="p-4">
                     <img className="w-[320px] rounded-2xl" src={BASE_URL + "servicios-banner.jpg"} alt="" />
                 </div>

@@ -8,7 +8,7 @@ import BlockSpace from "./ux/BlockSpace";
 export default function LoHacemos() {
 
     useEffect(() => {
-        AOS.init({ duration: 1500 }); // Puedes ajustar la duración de la animación aquí
+        AOS.refresh(); // Puedes ajustar la duración de la animación aquí
       }, []);
 
   return (
@@ -18,7 +18,7 @@ export default function LoHacemos() {
             <div className="w-full flex flex-col gap-2">
                 <BlockSpace></BlockSpace>
                 <h1 className="text-5xl text-left font-heading font-normal" >¿Qué somos y <br/> cómo lo hacemos?</h1>
-                <p className="text-xl text-justify text-align-last-justify p-2" data-aos="fade-right">
+                <p className="text-xl text-justify text-align-last-justify p-2" data-aos="fade-right" data-aos-duration="1500">
                     Empresa peruana fundada el 16 de Septiembre del 2014,
                     especializada en brindar servicios de consultoría y
                     capacitación en el rubro de la minería, construcción civil,
@@ -26,7 +26,7 @@ export default function LoHacemos() {
                     innovación y una cultura preventiva para el crecimiento
                     sostenible.
                 </p>
-                <p className="text-xl text-justify text-align-last-justify p-2" data-aos="fade-right">
+                <p className="text-xl text-justify text-align-last-justify p-2" data-aos="fade-right" data-aos-duration="1500">
                     Nuestro liderazgo está basado en una cultura de servicio
                     hacia nuestros colaboradores, clientes y a la comunidad
                     en general. Estamos comprometidos con el cuidado del
