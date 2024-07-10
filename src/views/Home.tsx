@@ -5,6 +5,7 @@ import Hero from "../components/Hero"
 import Lemas from "../components/Lemas"
 import LoHacemos from "../components/LoHacemos"
 import Mision from "../components/Mision"
+import Noticias from "../components/Noticias"
 import Postula from "../components/Postula"
 import Proyectos from "../components/Proyectos"
 import Servicios from "../components/Servicios"
@@ -25,6 +26,7 @@ export default function Home() {
       <Postula></Postula>
       <ServiciosLista></ServiciosLista>
       <Proyectos></Proyectos>
+      <Noticias></Noticias>
       <Footer></Footer>
     </>
   )
