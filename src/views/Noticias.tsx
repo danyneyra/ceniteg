@@ -51,5 +51,5 @@ export default function Noticias() {
       <WhatsApp></WhatsApp>
       <Footer></Footer>
     </>
-  );
+  )
 }

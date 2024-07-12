@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { BASE_URL } from "../assets/baseConfig";
 
 export default function Navbar(props) {
@@ -6,7 +7,7 @@ export default function Navbar(props) {
 
   return (
     <div>
-        <a className="text-white text-lg py-2 px-4 hover:underline underline-offset-8" href={BASE_URL + url}>{name}</a>
+        <Link className="text-white text-lg py-2 px-4 hover:underline underline-offset-8" to={BASE_URL + url}>{name}</Link>
     </div>
   )
 }
