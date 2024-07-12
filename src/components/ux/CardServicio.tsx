@@ -1,21 +1,14 @@
-import { BASE_URL } from "../../assets/baseCondig"
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-import { useEffect } from "react";
+import { BASE_URL } from "../../assets/baseConfig"
 
 export default function CardServicio(props) {
     const {image, title} = props
 
-    useEffect(() => {
-      AOS.init({ duration: 1000 }); // Puedes ajustar la duración de la animación aquí
-    }, []);
-
   return (
-    <div className="flex flex-col w-[200px] gap-4 items-center" data-aos="zoom-in-up">
-        <div className="bg-white rounded-[25%] w-[150px]">
+    <div className="flex flex-col w-[120px] lg:w-[200px] gap-4 items-center">
+        <div className="bg-white rounded-[25%] w-[100px] lg:w-[150px]">
             <img className="p-4" src={BASE_URL + image} alt="" />
         </div>
-        <p className="text-center text-lg">
+        <p className="text-sm text-center lg:text-lg">
             {title}
         </p>
     </div>

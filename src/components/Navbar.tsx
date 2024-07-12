@@ -1,4 +1,4 @@
-import { BASE_URL } from "../assets/baseCondig";
+import { BASE_URL } from "../assets/baseConfig";
 
 export default function Navbar(props) {
 

@@ -1,10 +1,10 @@
-import { BASE_URL } from '../../assets/baseCondig'
+import { BASE_URL } from '../../assets/baseConfig'
 
 export default function CardNoticiaItem(props) {
     const {image, title} = props
   return (
-    <div>
-        <img src={BASE_URL + image} alt={title} />
+    <div className='flex justify-center items-center'>
+        <img className="w-full h-full object-cover" src={BASE_URL + image} alt={title} />
     </div>
   )
 }

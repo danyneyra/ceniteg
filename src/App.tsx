@@ -1,38 +1,31 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
-import { BASE_URL } from "./assets/baseCondig"
+import { BASE_URL } from "./assets/baseConfig"
 import Home from "./views/Home"
-import Contact from "./views/Contact"
 import Projects from "./views/Projects"
-import Services from "./views/Services"
 import NotFound from "./views/NotFound"
-import About from "./views/About"
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // Importa los estilos de AOS
-import { useEffect } from "react"
+import Terminos from "./views/Terminos"
+import PoliticaPrivacidad from "./views/PoliticaPrivacidad"
+import Noticias from "./views/Noticias"
+import Nosotros from "./views/Nosotros"
+import Servicios from "./views/Servicios"
+import Noticia from "./components/Noticia"
 
 function App() {
 
-  useEffect(() => {
-    AOS.init({
-    });
-  }, []);
-
   const browserRouter = createBrowserRouter([
     {path: BASE_URL, element: <Home />},
-    {path: BASE_URL+"contact", element: <Contact />},
     {path: BASE_URL+"proyectos", element: <Projects />},
-    {path: BASE_URL+"servicios", element: <Services />},
-    {path: BASE_URL+"servicios", element: <About />},
+    {path: BASE_URL+"servicios", element: <Servicios />},
+    {path: BASE_URL+"nosotros", element: <Nosotros />},
+    {path: BASE_URL+"terminos-condiciones", element: <Terminos />},
+    {path: BASE_URL+"politicas-de-privacidad", element: <PoliticaPrivacidad />},
+    {path: BASE_URL+"noticias", element: <Noticias />},
+    {path: BASE_URL+"noticia/:noticiaId", element: <Noticia />},
     {path: "/*", element: <NotFound />}
   ])
 
   return (
-    
-    <>
-      <>
-        <RouterProvider router={browserRouter}/>
-      </>
-    </>
+    <RouterProvider router={browserRouter}/>
   )
 }
 
