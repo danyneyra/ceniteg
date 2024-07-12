@@ -3,12 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Page Not Found</title>
-  <meta http-equiv="refresh" content="0; URL='./index.html'" />
   <script type="text/javascript">
-    setTimeout(function() {
-      var newPath = window.location.pathname.replace(/\/404.html/, '');
-      window.location.replace(newPath);
-    }, 100);
+    // Esto redirige cualquier URL no encontrada a tu `index.html`
+    var redirectTo = window.location.protocol + '//' + window.location.host + '/#' + window.location.pathname;
+    window.location.replace(redirectTo);
   </script>
 </head>
 <body>
