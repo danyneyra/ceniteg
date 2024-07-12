@@ -1,7 +1,6 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import { BASE_URL } from "./assets/baseConfig"
 import Home from "./views/Home"
-import Projects from "./views/Projects"
 import NotFound from "./views/NotFound"
 import Terminos from "./views/Terminos"
 import PoliticaPrivacidad from "./views/PoliticaPrivacidad"
@@ -14,7 +13,6 @@ function App() {
 
   const browserRouter = createBrowserRouter([
     {path: BASE_URL, element: <Home />},
-    {path: BASE_URL+"proyectos", element: <Projects />},
     {path: BASE_URL+"servicios", element: <Servicios />},
     {path: BASE_URL+"nosotros", element: <Nosotros />},
     {path: BASE_URL+"terminos-condiciones", element: <Terminos />},

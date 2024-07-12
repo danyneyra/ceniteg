@@ -11,8 +11,7 @@ import Proyectos from "../components/SeccionProyectos"
 import SeccionServicios from "../components/SeccionServicios"
 import ServiciosLista from "../components/SeccionTrabajos"
 import Welcome from "../components/SeccionBienvenida"
-//import ScrollSnap from 'react-scroll-snap';
-import Fullpage, { FullPageSections, FullpageSection, FullpageNavigation } from '@ap.cx/react-fullpage';
+import Fullpage, { FullPageSections, FullpageSection } from '@ap.cx/react-fullpage';
 import Asesoria from "../components/SeccionAsesorias"
 import WhatsApp from "../components/ux/WhatsApp"
 
