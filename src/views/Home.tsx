@@ -1,6 +1,5 @@
 import CardPerson from "../components/SeccionGerente"
 import Footer from "../components/Footer"
-import Header from "../components/Header"
 import Hero from "../components/SeccionHero"
 import Lemas from "../components/SeccionLemas"
 import LoHacemos from "../components/SeccionLoHacemos"
@@ -13,18 +12,13 @@ import ServiciosLista from "../components/SeccionTrabajos"
 import Welcome from "../components/SeccionBienvenida"
 import Fullpage, { FullPageSections, FullpageSection } from '@ap.cx/react-fullpage';
 import Asesoria from "../components/SeccionAsesorias"
-import WhatsApp from "../components/ux/WhatsApp"
-
 export default function Home() {
 
 
   return (
     <>
-      <WhatsApp></WhatsApp>
       <Fullpage>
         {/* <FullpageNavigation /> */}
-        <Header></Header>
-        
         <FullPageSections>
           <FullpageSection style={{ height: '100vh'}}>
             <Hero></Hero>

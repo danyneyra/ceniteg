@@ -1,5 +1,5 @@
 import { BASE_URL } from "../assets/baseConfig";
-import Navbar from "./Navbar";
+// import Navbar from "./Navbar";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -21,13 +21,13 @@ export default function Header() {
             />
         </Link>
         <div className="hidden lg:flex lg:flex-col">
-          <nav className="flex gap-4 py-4 pl-8 pr-12">
+          {/* <nav className="flex gap-4 py-4 pl-8 pr-12">
             <Navbar name="Inicio" url=""></Navbar>
             <Navbar name="Nosotros" url="nosotros"></Navbar>
             <Navbar name="Servicios" url="servicios"></Navbar>
-            {/* <Navbar name="Proyectos" url="proyectos"></Navbar> */}
             <Navbar name="Noticias" url="noticias"></Navbar>
-          </nav>
+            <Navbar name="Brochures" url="brochures"></Navbar>
+          </nav> */}
           <div className="border-t-8 border-[#4b86ba] mt-4"></div>
         </div>
       </div>

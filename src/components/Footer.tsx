@@ -9,12 +9,11 @@ export default function Footer() {
         <div className="flex flex-col items-center gap-4 lg:gap-2 lg:items-start">
           <div className="flex flex-col items-center justify-center lg:items-start">
             <img className="w-[150px] lg:w-[300px]" src={BASE_URL + "ceniteg.png"} alt="" />
-            <p className="text-center lg:text-left">Todos los derechos reservados © Ceniteg 2024</p>
           </div>
-          <div className="flex flex-col gap-2">
+          {/* <div className="flex flex-col gap-2">
             <Link to= {BASE_URL + "terminos-condiciones"}>Términos y condiciones</Link>
             <Link to={BASE_URL + "politicas-de-privacidad"}>Políticas de privacidad</Link>
-          </div>
+          </div> */}
           <div className="flex flex-col gap-2">
             <p>Síguenos en:</p>
             <div className="flex items-center gap-2">
@@ -41,20 +40,19 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col">
+        {/* <div className="flex flex-col">
           <div className="flex flex-col items-center">
             <h2 className="font-bold">¡Trabaja con nosotros!</h2>
             <p>Postula a nuestra bolsa de trabajo</p>
             <p className="font-bold">info@ceniteg.com</p>
           </div>
-        </div>
-        <div className="hidden lg:flex lg:flex-col gap-4">
+        </div> */}
+        {/* <div className="hidden lg:flex lg:flex-col gap-4">
           <Nav name="Inicio" url=""></Nav>
           <Nav name="Nosotros" url="nosotros"></Nav>
           <Nav name="Servicios" url="servicios"></Nav>
-          {/* <Nav name="Proyectos" url="proyectos"></Nav> */}
           <Nav name="Noticias" url="noticias"></Nav>
-        </div>
+        </div> */}
         <div className="flex flex-col gap-4">
           <div className="flex items-center gap-2">
             <img
@@ -71,10 +69,10 @@ export default function Footer() {
               Trujillo, Perú
             </p>
           </div>
-          <div className="flex items-center gap-2">
+          {/* <div className="flex items-center gap-2">
             <img className="w-[40px]" src={BASE_URL + "icon-mail.png"} alt="" />
             <p>info@ceniteg.com</p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

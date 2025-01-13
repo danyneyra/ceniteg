@@ -1,31 +1,23 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
-import { BASE_URL } from "./assets/baseConfig"
 import Home from "./views/Home"
-import NotFound from "./views/NotFound"
-import Terminos from "./views/Terminos"
-import PoliticaPrivacidad from "./views/PoliticaPrivacidad"
-import Noticias from "./views/Noticias"
-import Servicios from "./views/Servicios"
-import Nosotros from "./views/Nosotros"
-import Noticia from "./components/Noticia"
+import Brochures from "./views/Brochures"
+import Layout from "./components/layouts/Layout"
+import { BASE_URL } from "./assets/baseConfig"
 
+const router = createBrowserRouter(
+  [
+    {
+      element: <Layout />,
+      children: [
+        { path: BASE_URL + "brochures/:id?", element: <Brochures /> }
+      ],
+    },
+    { path: BASE_URL, element: <Home /> }
+  ]
+);
 
 function App() {
-
-  const browserRouter = createBrowserRouter([
-    {path: BASE_URL, element: <Home />},
-    {path: BASE_URL+"terminos-condiciones", element: <Terminos />},
-    {path: BASE_URL+"politicas-de-privacidad", element: <PoliticaPrivacidad />},
-    {path: BASE_URL+"noticias", element: <Noticias />},
-    {path: BASE_URL+"servicios", element: <Servicios />},
-    {path: BASE_URL+"nosotros", element: <Nosotros />},
-    {path: BASE_URL+"noticia/:noticiaId", element: <Noticia />},
-    {path: "/*", element: <NotFound />}
-  ])
-
-  return (
-    <RouterProvider router={browserRouter}/>
-  )
+  return <RouterProvider router={router} />;
 }
 
 export default App
